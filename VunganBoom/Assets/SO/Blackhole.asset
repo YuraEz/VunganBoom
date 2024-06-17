@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eb506b4cfe6e3408379b412cb7322e, type: 3}
+  m_Name: Blackhole
+  m_EditorClassIdentifier: 
+  skinName: Blackhole
+  skinVisual: {fileID: 21300000, guid: a7e0b25a27c4e7142941f3c1b09ae49f, type: 3}
+  skinBorder: {fileID: 0}
+  skinCenter: {fileID: 0}
+  skinIcon: {fileID: 21300000, guid: 45a1b48b3f10b8f42ae4e1cfa73defe3, type: 3}
+  cost: 1000
+  buyed: 0
+  realMoney: 0
+  buyID: 
+  id: 3
