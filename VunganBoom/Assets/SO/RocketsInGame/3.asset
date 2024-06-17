@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   rocketsModel:
-  - {fileID: 21300000, guid: dedf099b38512224788b36483c4aaeb9, type: 3}
-  - {fileID: 21300000, guid: b8846cabf2beac244b1f25d98c767aaf, type: 3}
-  - {fileID: 21300000, guid: d8a53999d0648ce4fbb10a7a20684a10, type: 3}
-  - {fileID: 21300000, guid: 9cd33e55f06412a44a032a98336a5d24, type: 3}
+  - {fileID: 21300000, guid: ae12f15107a304241b0eb2cdada43dbb, type: 3}
+  - {fileID: 21300000, guid: d0b721fef4bb4fe4988ab2e0bbacde86, type: 3}
+  - {fileID: 21300000, guid: 6b4efd31537cfa54ea58505b065b70b3, type: 3}
+  - {fileID: 21300000, guid: a1064e3c7f492634ba3f400b670f1bb4, type: 3}
