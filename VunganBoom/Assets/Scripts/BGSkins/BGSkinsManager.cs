@@ -16,6 +16,8 @@ public class BGSkinsManager : MonoBehaviour
     public BGInfo[] AllSkins { get => allSkins; }
     public BGInfo CurrentSkin { get => currentSkin; }
 
+    private BGInfo tryBuyBg;
+
     private void Start()
     {
        // PurchaseManager.Instance.InitializePurchasing();
@@ -42,8 +44,11 @@ public class BGSkinsManager : MonoBehaviour
 
             if (newSkin.Buyed == false)
             {
+                newSkin.Buyed = false;
+                tryBuyBg = newSkin;
                 TryBuyProduct(newSkin.BuyID);
-                newSkin.Buyed = true;
+                
+              
            //     PlayerPrefs.SetInt(newSkin.BuyID, 1);
             }
         }
@@ -73,6 +78,7 @@ public class BGSkinsManager : MonoBehaviour
         {
             Debug.Log("IAP is not initialized.");
             PopukayuMagazinAz.Instance.ShowFailed();
+            tryBuyBg.Buyed = false;
             return;
         }
 
@@ -84,11 +90,13 @@ public class BGSkinsManager : MonoBehaviour
         {
             Debug.Log($"Purchasing product asynchronously: '{product.definition.id}'");
             PurchaseManager.Instance._storeController.InitiatePurchase(product);
+            tryBuyBg.Buyed = true;
         }
         else
         {
             Debug.Log($"Could not initiate purchase for product ID: {stringId}. It might not be available for purchase.");
             PopukayuMagazinAz.Instance.ShowFailed();
+            tryBuyBg.Buyed = false;
         }
     }
 }

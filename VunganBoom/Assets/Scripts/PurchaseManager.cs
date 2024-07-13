@@ -73,13 +73,13 @@ public class PurchaseManager : MonoBehaviour, IDetailedStoreListener
     {
         switch (args.purchasedProduct.definition.id)
         {
-            case "pumpkin_king":
-                Debug.Log("pumpkin_king successfully purchased!");
+            case "faded_sun":
+                Debug.Log("faded_sun successfully purchased!");
                 PopukayuMagazinAz.Instance.ShowSuccess();
                 carouselInfo.Buyed = true;
                 break;
-            case "mythical_guns":
-                Debug.Log("mythical_guns successfully purchased!");
+            case "rocket":
+                Debug.Log("rocket successfully purchased!");
                 PopukayuMagazinAz.Instance.ShowSuccess();
                 gunSkinInfo.Buyed = true;
                 break;
